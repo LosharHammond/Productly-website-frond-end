@@ -1,0 +1,366 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #23395d;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-signin {
+    padding: 8px 15px;
+    background-color: transparent;
+    color: #23395d;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-signup {
+    padding: 8px 15px;
+    background-color: #fdbb2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-signin:hover,
+.btn-signup:hover {
+    opacity: 0.8;
+}
+
+/* Header Section */
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1em;
+    color: #666;
+    margin: 15px 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-get-started {
+    padding: 12px 20px;
+    background-color: #fdbb2d;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-watch-video {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #fdbb2d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-watch-video:hover,
+.btn-get-started:hover {
+    opacity: 0.8;
+}
+
+.image-content {
+    max-width: 50%;
+}
+
+.illustration-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Features Section */
+
+.features-section {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #fff;
+}
+
+.features-section h2 {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 0 auto 15px;
+}
+
+.feature h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.btn-sign-up {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #fdbb2d;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-sign-up:hover {
+    opacity: 0.8;
+}
+
+/* Validation Section */
+.validation-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.validation-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.validation-section .text-content {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.validation-section .text-content h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.validation-section .text-content p {
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.validation-section .illustration {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.validation-section .illustration .illustration-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.chat-bubble {
+    position: absolute;
+    background-color: #ffcc4d;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-bubble.blue {
+    background-color: #3b82f6;
+    top: 20px;
+    left: -50px;
+}
+
+.chat-bubble.yellow {
+    background-color: #ffcc4d;
+    top: 80px;
+    right: -30px;
+}
+
+.chat-bubble.red {
+    background-color: #f87171;
+    top: 140px;
+    left: -30px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #f9f9f9;
+    color: #c4c4c4;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-image {
+    width: 40px;
+    /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+.footer-logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a2a5e;
+    /* Customize logo text color */
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subscribe-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.btn-signup-now {
+    background-color: #ff8c00;
+    /* Orange button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.btn-signup-now:hover {
+    background-color: #e07b00;
+    /* Darker orange on hover */
+}
